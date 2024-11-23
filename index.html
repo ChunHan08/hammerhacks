@@ -4,13 +4,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Slay girl</title>
+  
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    img{
+        height: auto;
+        width: 600px;
+    }
+  </style>
+    h1 {
+        color: red;
+    }
+
 </head>
 
 <body>
-  <h1>Hello world </h1>
-  <img src="https://pbs.twimg.com/profile_images/1539507550164504576/6wj64lva_200x200.jpg"
+  <h1>Slay girl </h1>
+  <p> Your so fat</p>
+  <img src="https://pbs.twimg.com/profile_images/1539507550164504576/6wj64lva_200x200.jpg">
+  <blockquote>"Let go of the people who bring you down, and surround yourself with those who bring out the best in you. -taylor" </blockquote>
+  <button onclick="changeQuote()">Change Quote</button>
+  <script>
+    var index = 0;
+
+    function changeQuote() {
+        var quotes = [
+            `"slay girl" - chun han`,
+            `"be who you are for ur pride" - chun han`,
+            `"im gonna drag ur hair" - chun han`,
+            `"once you go black you never go back" - chun han`,
+        ];
+
+        var blockquote = document.querySelector("blockquote");
+        blockquote.innerHTML = quotes[index];
+
+        index++;
+        if (index >= 4) {
+            index = 0;
+        }
+    }
+  </script>
 </body>
 
 </html>
